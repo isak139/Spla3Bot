@@ -1,0 +1,31 @@
+{
+  "name": "spla3bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isak139/Spla3Bot.git"
+  },
+  "keywords": [],
+  "author": "isak139",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isak139/Spla3Bot/issues"
+  },
+  "homepage": "https://github.com/isak139/Spla3Bot#readme",
+  "dependencies": {
+    "@discordjs/builders": "^1.2.0",
+    "@discordjs/rest": "^1.1.0",
+    "discord.js": "^14.3.0",
+    "dotenv": "^16.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.26.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.7.1"
+  }
+}
