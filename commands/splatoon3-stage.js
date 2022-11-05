@@ -3,28 +3,28 @@ const { EmbedBuilder } = require("discord.js");
 const buttonPages = require("../functions/pagination");
 const fs = require("fs");
 
-const stageGifs = JSON.parse(fs.readFileSync("././resources/splatoon3-stageGifs.json", "utf8")).stageGifs;
+const stageImages = JSON.parse(fs.readFileSync("././resources/splatoon3-stageImages.json", "utf8")).stageImages;
 
 const matchInfo = {
     regular: {
         name: "レギュラー",
         icon: "https://i.imgur.com/sHXeNci.png",
-        color: "#899A37",
+        color: 0x899a37,
     },
     "bankara-challenge": {
         name: "チャレンジ",
         icon: "https://i.imgur.com/UO6hEB6.png",
-        color: "#835439",
+        color: 0x835439,
     },
     "bankara-open": {
         name: "オープン",
         icon: "https://i.imgur.com/UO6hEB6.png",
-        color: "#835439",
+        color: 0x835439,
     },
     league: {
         name: "リーグ",
         icon: "https://i.imgur.com/oiIZSXG.png",
-        color: "#C76080",
+        color: 0xc76080,
     },
 };
 
@@ -69,7 +69,15 @@ module.exports = {
         const splaUrl = "https://spla3.yuu26.com/api/";
         const match = interaction.options.getString("match", true);
         const time = interaction.options.getString("time", true);
-        const splaSchedule = await (await fetch(`${splaUrl}${match}/${time}`)).json();
+
+        // データを取得
+        let splaSchedule;
+        try {
+            splaSchedule = await (await fetch(`${splaUrl}${match}/${time}`)).json();
+        } catch (e) {
+            console.log(e);
+            return interaction.reply({ content: "Error: Could not fetch data", ephemeral: true });
+        }
 
         if (time == "now" || time == "next") {
             const result = splaSchedule.results[0];
@@ -77,44 +85,42 @@ module.exports = {
             const endDate = result.end_time;
             const description = `${startDate.slice(11, 16)} ~ ${endDate.slice(11, 16)} (${time})`;
             // フェス開催中
-            if (splaSchedule.results[0].is_fest) {
-                const embed = new EmbedBuilder()
-                    .setColor("eaff3d")
-                    .setAuthor({
-                        name: "フェスマッチ",
-                        iconURL: "https://i.imgur.com/oIlQeGX.png",
-                    })
-                    .setDescription(description)
-                    .setImage("https://pbs.twimg.com/media/FciqAP2aIAYZiHJ.jpg");
-
+            if (result.is_fest) {
+                const author = {
+                    name: "フェスマッチ",
+                    icon_url: "https://i.imgur.com/oIlQeGX.png",
+                };
+                const embed = new EmbedBuilder().setColor("eaff3d").setAuthor(author).setDescription(description).setImage("https://pbs.twimg.com/media/FciqAP2aIAYZiHJ.jpg");
                 return await interaction.editReply({ embeds: [embed] });
             } else {
                 // フェス開催中でない
-                const author = {
-                    name: result.rule.name + ` (${matchInfo[match].name})`,
-                    iconURL: matchInfo[match].iconconst,
+                const embed = {
+                    color: matchInfo[match].color,
+                    author: {
+                        name: result.rule.name + ` (${matchInfo[match].name})`,
+                        icon_url: matchInfo[match].icon,
+                    },
+                    description: description,
+                    thumbnail: { url: ruleInfo[result.rule.name].img },
+                    fields: [
+                        {
+                            name: "ステージ1",
+                            value: result.stages[0].name,
+                            inline: true,
+                        },
+                        {
+                            name: "ステージ2",
+                            value: result.stages[1].name,
+                            inline: true,
+                        },
+                    ],
+                    image: {
+                        url: stageImages[result.stages[0].id][result.stages[1].id],
+                        proxy_url: stageImages[result.stages[0].id][result.stages[1].id],
+                        height: 2160,
+                        width: 3840,
+                    },
                 };
-                const fields = [
-                    {
-                        name: "ステージ1",
-                        value: result.stages[0].name,
-                        inline: true,
-                    },
-                    {
-                        name: "ステージ2",
-                        value: result.stages[1].name,
-                        inline: true,
-                    },
-                ];
-                const img = stageGifs[result.stages[0].id][result.stages[1].id];
-                const embed = new EmbedBuilder()
-                    .setColor(matchInfo[match].color)
-                    .setAuthor(author)
-                    .setDescription(description)
-                    .setThumbnail(ruleInfo[result.rule.name].img)
-                    .addFields(fields)
-                    .setImage(img);
-
                 return await interaction.editReply({ embeds: [embed] });
             }
         } else if (time == "schedule") {
@@ -126,49 +132,42 @@ module.exports = {
                 const description = `${startDate.slice(11, 16)} ~ ${endDate.slice(11, 16)}`;
                 // フェス開催中
                 if (result.is_fest) {
-                    const embed = new EmbedBuilder()
-                        .setColor("eaff3d")
-                        .setAuthor({
-                            name: "フェスマッチ",
-                            iconURL: "https://i.imgur.com/oIlQeGX.png",
-                        })
-                        .setDescription(description)
-                        .setImage("https://pbs.twimg.com/media/FciqAP2aIAYZiHJ.jpg");
+                    const author = {
+                        name: "フェスマッチ",
+                        icon_url: "https://i.imgur.com/oIlQeGX.png",
+                    };
+                    const embed = new EmbedBuilder().setColor("eaff3d").setAuthor(author).setDescription(description).setImage("https://pbs.twimg.com/media/FciqAP2aIAYZiHJ.jpg");
                     pages.push(embed);
                 } else {
                     // フェス開催中でない
-                    const author = {
-                        name: `${result.rule.name} (${matchInfo[match].name})`,
-                        iconURL: matchInfo[match].icon,
-                    };
-                    const fields = [
-                        {
-                            name: "ステージ1",
-                            value: result.stages[0].name,
-                            inline: true,
+                    const embed = {
+                        color: matchInfo[match].color,
+                        author: {
+                            name: `${result.rule.name} (${matchInfo[match].name})`,
+                            icon_url: matchInfo[match].icon,
                         },
-                        {
-                            name: "ステージ2",
-                            value: result.stages[1].name,
-                            inline: true,
+                        description: description,
+                        thumbnail: { url: ruleInfo[result.rule.name].img },
+                        fields: [
+                            {
+                                name: "ステージ1",
+                                value: result.stages[0].name,
+                                inline: true,
+                            },
+                            {
+                                name: "ステージ2",
+                                value: result.stages[1].name,
+                                inline: true,
+                            },
+                        ],
+                        image: { url: stageImages[result.stages[0].id][result.stages[1].id] },
+                        footer: {
+                            text: `Page ${index + 1}/${splaSchedule.results.length}`,
                         },
-                    ];
-                    const img = stageGifs[result.stages[0].id][result.stages[1].id];
-                    const footer = {
-                        text: `Page ${index + 1}/${splaSchedule.results.length}`,
                     };
-                    const embed = new EmbedBuilder()
-                        .setColor(matchInfo[match].color)
-                        .setAuthor(author)
-                        .setDescription(description)
-                        .setThumbnail(ruleInfo[result.rule.name].img)
-                        .addFields(fields)
-                        .setImage(img)
-                        .setFooter(footer);
                     pages.push(embed);
                 }
             });
-
             return buttonPages(interaction, pages);
         } else {
             const embed = new EmbedBuilder().setTitle("Error");
