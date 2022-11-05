@@ -88,7 +88,7 @@ module.exports = {
             if (result.is_fest) {
                 const author = {
                     name: "フェスマッチ",
-                    icon_url: "https://i.imgur.com/oIlQeGX.png",
+                    icon_url: "https://i.imgur.com/ygVWwqs.png",
                 };
                 const embed = new EmbedBuilder().setColor("eaff3d").setAuthor(author).setDescription(description).setImage("https://pbs.twimg.com/media/FciqAP2aIAYZiHJ.jpg");
                 return await interaction.editReply({ embeds: [embed] });
@@ -134,7 +134,7 @@ module.exports = {
                 if (result.is_fest) {
                     const author = {
                         name: "フェスマッチ",
-                        icon_url: "https://i.imgur.com/oIlQeGX.png",
+                        icon_url: "https://i.imgur.com/ygVWwqs.png",
                     };
                     const embed = new EmbedBuilder().setColor("eaff3d").setAuthor(author).setDescription(description).setImage("https://pbs.twimg.com/media/FciqAP2aIAYZiHJ.jpg");
                     pages.push(embed);
