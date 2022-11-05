@@ -98,27 +98,14 @@ module.exports = {
                 // フェス開催中でない
                 const embed = {
                     color: matchInfo[match].color,
-                    author: {
-                        name: result.rule.name + ` (${matchInfo[match].name})`,
-                        icon_url: matchInfo[match].icon,
-                    },
+                    author: { name: result.rule.name + ` (${matchInfo[match].name})`, icon_url: matchInfo[match].icon },
                     description: description,
                     thumbnail: { url: ruleInfo[result.rule.name].img },
                     fields: [
-                        {
-                            name: "ステージ1",
-                            value: result.stages[0].name,
-                            inline: true,
-                        },
-                        {
-                            name: "ステージ2",
-                            value: result.stages[1].name,
-                            inline: true,
-                        },
+                        { name: "ステージ1", value: result.stages[0].name, inline: true },
+                        { name: "ステージ2", value: result.stages[1].name, inline: true },
                     ],
-                    image: {
-                        url: stageImages[result.stages[0].id][result.stages[1].id],
-                    },
+                    image: { url: stageImages[result.stages[0].id][result.stages[1].id] },
                 };
                 return await interaction.editReply({ embeds: [embed] });
             }
@@ -141,28 +128,15 @@ module.exports = {
                     // フェス開催中でない
                     const embed = {
                         color: matchInfo[match].color,
-                        author: {
-                            name: `${result.rule.name} (${matchInfo[match].name})`,
-                            icon_url: matchInfo[match].icon,
-                        },
+                        author: { name: `${result.rule.name} (${matchInfo[match].name})`, icon_url: matchInfo[match].icon },
                         description: description,
                         thumbnail: { url: ruleInfo[result.rule.name].img },
                         fields: [
-                            {
-                                name: "ステージ1",
-                                value: result.stages[0].name,
-                                inline: true,
-                            },
-                            {
-                                name: "ステージ2",
-                                value: result.stages[1].name,
-                                inline: true,
-                            },
+                            { name: "ステージ1", value: result.stages[0].name, inline: true },
+                            { name: "ステージ2", value: result.stages[1].name, inline: true },
                         ],
                         image: { url: stageImages[result.stages[0].id][result.stages[1].id] },
-                        footer: {
-                            text: `Page ${index + 1}/${splaSchedule.results.length}`,
-                        },
+                        footer: { text: `Page ${index + 1}/${splaSchedule.results.length}` },
                     };
                     pages.push(embed);
                 }
