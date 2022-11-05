@@ -3,6 +3,8 @@ const { SlashCommandBuilder } = require("@discordjs/builders");
 const buttonPages = require("../functions/pagination");
 const fs = require("fs");
 
+const splaApi = "https://spla3.yuu26.com/api/";
+
 const stageImages = JSON.parse(fs.readFileSync("././resources/splatoon3-stageImages.json", "utf8")).stageImages;
 
 const matchInfo = {
@@ -68,14 +70,13 @@ module.exports = {
         ),
 
     run: async ({ interaction }) => {
-        const splaUrl = "https://spla3.yuu26.com/api/";
         const match = interaction.options.getString("match", true);
         const time = interaction.options.getString("time", true);
 
         // データを取得
         let splaSchedule;
         try {
-            splaSchedule = await (await fetch(`${splaUrl}${match}/${time}`)).json();
+            splaSchedule = await (await fetch(`${splaApi}${match}/${time}`)).json();
         } catch (e) {
             console.log(e);
             return interaction.reply({ content: "Error: Could not fetch data", ephemeral: true });
