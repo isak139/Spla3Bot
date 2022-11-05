@@ -49,6 +49,7 @@ const ruleInfo = {
 };
 
 const fesImage = "https://i.imgur.com/dwnSeCC.jpg";
+const fesIcon = "https://i.imgur.com/kkg0f8w.png";
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -93,7 +94,7 @@ module.exports = {
                     color: 0xeaff3d,
                     author: {
                         name: "フェスマッチ",
-                        icon_url: "https://i.imgur.com/kkg0f8w.png",
+                        icon_url: fesIcon,
                     },
                     description: description,
                     image: { url: fesImage },
@@ -127,7 +128,7 @@ module.exports = {
                         color: 0xeaff3d,
                         author: {
                             name: "フェスマッチ",
-                            icon_url: "https://i.imgur.com/kkg0f8w.png",
+                            icon_url: fesIcon,
                         },
                         description: description,
                         image: { url: fesImage },
