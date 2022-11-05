@@ -90,9 +90,9 @@ module.exports = {
             if (result.is_fest) {
                 const author = {
                     name: "フェスマッチ",
-                    icon_url: fesImage,
+                    icon_url: "https://i.imgur.com/ygVWwqs.png",
                 };
-                const embed = new EmbedBuilder().setColor("eaff3d").setAuthor(author).setDescription(description).setImage("https://pbs.twimg.com/media/FciqAP2aIAYZiHJ.jpg");
+                const embed = new EmbedBuilder().setColor("eaff3d").setAuthor(author).setDescription(description).setImage(fesImage);
                 return await interaction.editReply({ embeds: [embed] });
             } else {
                 // フェス開催中でない
@@ -133,9 +133,9 @@ module.exports = {
                 if (result.is_fest) {
                     const author = {
                         name: "フェスマッチ",
-                        icon_url: fesImage,
+                        icon_url: "https://i.imgur.com/ygVWwqs.png",
                     };
-                    const embed = new EmbedBuilder().setColor("eaff3d").setAuthor(author).setDescription(description).setImage("https://pbs.twimg.com/media/FciqAP2aIAYZiHJ.jpg");
+                    const embed = new EmbedBuilder().setColor("eaff3d").setAuthor(author).setDescription(description).setImage(fesImage);
                     pages.push(embed);
                 } else {
                     // フェス開催中でない
