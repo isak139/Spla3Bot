@@ -1,5 +1,5 @@
 const { SlashCommandBuilder } = require("@discordjs/builders");
-const { EmbedBuilder } = require("discord.js");
+//const { EmbedBuilder } = require("discord.js");
 const buttonPages = require("../functions/pagination");
 const fs = require("fs");
 
@@ -88,11 +88,15 @@ module.exports = {
             const description = `${startDate.slice(11, 16)} ~ ${endDate.slice(11, 16)} (${time})`;
             // フェス開催中
             if (result.is_fest) {
-                const author = {
-                    name: "フェスマッチ",
-                    icon_url: "https://i.imgur.com/kkg0f8w.png",
+                const embed = {
+                    color: 0xeaff3d,
+                    author: {
+                        name: "フェスマッチ",
+                        icon_url: "https://i.imgur.com/kkg0f8w.png",
+                    },
+                    description: description,
+                    image: { url: fesImage },
                 };
-                const embed = new EmbedBuilder().setColor("eaff3d").setAuthor(author).setDescription(description).setImage(fesImage);
                 return await interaction.editReply({ embeds: [embed] });
             } else {
                 // フェス開催中でない
@@ -118,11 +122,15 @@ module.exports = {
                 const description = `${startDate.slice(11, 16)} ~ ${endDate.slice(11, 16)}`;
                 // フェス開催中
                 if (result.is_fest) {
-                    const author = {
-                        name: "フェスマッチ",
-                        icon_url: "https://i.imgur.com/kkg0f8w.png",
+                    const embed = {
+                        color: 0xeaff3d,
+                        author: {
+                            name: "フェスマッチ",
+                            icon_url: "https://i.imgur.com/kkg0f8w.png",
+                        },
+                        description: description,
+                        image: { url: fesImage },
                     };
-                    const embed = new EmbedBuilder().setColor("eaff3d").setAuthor(author).setDescription(description).setImage(fesImage);
                     pages.push(embed);
                 } else {
                     // フェス開催中でない
@@ -143,7 +151,7 @@ module.exports = {
             });
             return buttonPages(interaction, pages);
         } else {
-            const embed = new EmbedBuilder().setTitle("Error");
+            const embed = { title: "Error" };
             return await interaction.editReply({ embeds: [embed] });
         }
     },
