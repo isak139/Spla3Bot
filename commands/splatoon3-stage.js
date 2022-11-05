@@ -46,6 +46,8 @@ const ruleInfo = {
     },
 };
 
+const fesImage = "https://i.imgur.com/dwnSeCC.jpg";
+
 module.exports = {
     data: new SlashCommandBuilder()
         .setName("stage")
@@ -88,7 +90,7 @@ module.exports = {
             if (result.is_fest) {
                 const author = {
                     name: "フェスマッチ",
-                    icon_url: "https://i.imgur.com/ygVWwqs.png",
+                    icon_url: fesImage,
                 };
                 const embed = new EmbedBuilder().setColor("eaff3d").setAuthor(author).setDescription(description).setImage("https://pbs.twimg.com/media/FciqAP2aIAYZiHJ.jpg");
                 return await interaction.editReply({ embeds: [embed] });
@@ -131,7 +133,7 @@ module.exports = {
                 if (result.is_fest) {
                     const author = {
                         name: "フェスマッチ",
-                        icon_url: "https://i.imgur.com/ygVWwqs.png",
+                        icon_url: fesImage,
                     };
                     const embed = new EmbedBuilder().setColor("eaff3d").setAuthor(author).setDescription(description).setImage("https://pbs.twimg.com/media/FciqAP2aIAYZiHJ.jpg");
                     pages.push(embed);
