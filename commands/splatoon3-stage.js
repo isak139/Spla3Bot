@@ -116,9 +116,6 @@ module.exports = {
                     ],
                     image: {
                         url: stageImages[result.stages[0].id][result.stages[1].id],
-                        proxy_url: stageImages[result.stages[0].id][result.stages[1].id],
-                        height: 2160,
-                        width: 3840,
                     },
                 };
                 return await interaction.editReply({ embeds: [embed] });
