@@ -87,7 +87,7 @@ module.exports = {
             const result = splaSchedule.results[0];
             const startDate = result.start_time;
             const endDate = result.end_time;
-            const description = `${startDate.slice(11, 16)} ~ ${endDate.slice(11, 16)} (${time})`;
+            const matchDate = `${startDate.slice(11, 16)} ~ ${endDate.slice(11, 16)} (${time})`;
             // フェス開催中
             if (result.is_fest) {
                 const embed = {
@@ -96,7 +96,7 @@ module.exports = {
                         name: "フェスマッチ",
                         icon_url: fesIcon,
                     },
-                    description: description,
+                    fields: [{ name: "期間", value: matchDate }],
                     image: { url: fesImage },
                 };
                 return await interaction.editReply({ embeds: [embed] });
@@ -105,9 +105,9 @@ module.exports = {
                 const embed = {
                     color: matchInfo[match].color,
                     author: { name: result.rule.name + ` (${matchInfo[match].name})`, icon_url: matchInfo[match].icon },
-                    description: description,
                     thumbnail: { url: ruleInfo[result.rule.name].img },
                     fields: [
+                        { name: "期間", value: matchDate, inline: false },
                         { name: "ステージ1", value: result.stages[0].name, inline: true },
                         { name: "ステージ2", value: result.stages[1].name, inline: true },
                     ],
@@ -121,7 +121,7 @@ module.exports = {
             splaSchedule.results.forEach((result, index) => {
                 const startDate = result.start_time;
                 const endDate = result.end_time;
-                const description = `${startDate.slice(11, 16)} ~ ${endDate.slice(11, 16)}`;
+                const matchDate = `${startDate.slice(11, 16)} ~ ${endDate.slice(11, 16)}`;
                 // フェス開催中
                 if (result.is_fest) {
                     const embed = {
@@ -130,7 +130,7 @@ module.exports = {
                             name: "フェスマッチ",
                             icon_url: fesIcon,
                         },
-                        description: description,
+                        fields: [{ name: "期間", value: matchDate }],
                         image: { url: fesImage },
                     };
                     pages.push(embed);
@@ -139,9 +139,9 @@ module.exports = {
                     const embed = {
                         color: matchInfo[match].color,
                         author: { name: `${result.rule.name} (${matchInfo[match].name})`, icon_url: matchInfo[match].icon },
-                        description: description,
                         thumbnail: { url: ruleInfo[result.rule.name].img },
                         fields: [
+                            { name: "期間", value: matchDate, inline: false },
                             { name: "ステージ1", value: result.stages[0].name, inline: true },
                             { name: "ステージ2", value: result.stages[1].name, inline: true },
                         ],
