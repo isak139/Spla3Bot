@@ -42,6 +42,7 @@ module.exports = {
                     name: "サーモンラン",
                     icon_url: "https://i.imgur.com/QthCIvF.png",
                 },
+                thumbnail: { url: "https://i.imgur.com/ifdahLY.png" },
                 fields: [
                     { name: "期間", value: coopDate, inline: false },
                     { name: "ブキ", value: `${weapons[0].name}\n${weapons[1].name}\n${weapons[2].name}\n${weapons[3].name}`, inline: true },
@@ -63,6 +64,7 @@ module.exports = {
                         name: "サーモンラン",
                         icon_url: "https://i.imgur.com/QthCIvF.png",
                     },
+                    thumbnail: { url: "https://i.imgur.com/ifdahLY.png" },
                     fields: [
                         { name: "期間", value: coopDate, inline: false },
                         { name: "ブキ", value: `${weapons[0].name}\n${weapons[1].name}\n${weapons[2].name}\n${weapons[3].name}`, inline: true },
