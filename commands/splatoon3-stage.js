@@ -7,46 +7,9 @@ const splaApi = "https://spla3.yuu26.com/api/";
 
 const stageImages = JSON.parse(fs.readFileSync("././resources/splatoon3-stageImages.json", "utf8")).stageImages;
 
-const matchInfo = {
-    regular: {
-        name: "レギュラー",
-        icon: "https://i.imgur.com/sHXeNci.png",
-        color: 0x899a37,
-    },
-    "bankara-challenge": {
-        name: "チャレンジ",
-        icon: "https://i.imgur.com/UO6hEB6.png",
-        color: 0x835439,
-    },
-    "bankara-open": {
-        name: "オープン",
-        icon: "https://i.imgur.com/UO6hEB6.png",
-        color: 0x835439,
-    },
-    league: {
-        name: "リーグ",
-        icon: "https://i.imgur.com/oiIZSXG.png",
-        color: 0xc76080,
-    },
-};
+const ruleInfo = JSON.parse(fs.readFileSync("././resources/splatoon3-ruleInfo.json", "utf8"));
 
-const ruleInfo = {
-    ナワバリバトル: {
-        img: "https://i.imgur.com/KOQFBER.png",
-    },
-    ガチヤグラ: {
-        img: "https://i.imgur.com/6N9nuLe.png",
-    },
-    ガチホコバトル: {
-        img: "https://i.imgur.com/6YMbNFG.png",
-    },
-    ガチアサリ: {
-        img: "https://i.imgur.com/hN4a3uJ.png",
-    },
-    ガチエリア: {
-        img: "https://i.imgur.com/GaAg1IJ.png",
-    },
-};
+const matchInfo = JSON.parse(fs.readFileSync("././resources/splatoon3-matchInfo.json", "utf8"));
 
 const fesImage = "https://i.imgur.com/dwnSeCC.jpg";
 const fesIcon = "https://i.imgur.com/kkg0f8w.png";
@@ -105,7 +68,7 @@ module.exports = {
                 const embed = {
                     color: matchInfo[match].color,
                     author: { name: result.rule.name + ` (${matchInfo[match].name})`, icon_url: matchInfo[match].icon },
-                    thumbnail: { url: ruleInfo[result.rule.name].img },
+                    thumbnail: { url: ruleInfo[result.rule.name].image },
                     fields: [
                         { name: "期間", value: matchDate, inline: false },
                         { name: "ステージ1", value: result.stages[0].name, inline: true },
@@ -139,7 +102,7 @@ module.exports = {
                     const embed = {
                         color: matchInfo[match].color,
                         author: { name: `${result.rule.name} (${matchInfo[match].name})`, icon_url: matchInfo[match].icon },
-                        thumbnail: { url: ruleInfo[result.rule.name].img },
+                        thumbnail: { url: ruleInfo[result.rule.name].image },
                         fields: [
                             { name: "期間", value: matchDate, inline: false },
                             { name: "ステージ1", value: result.stages[0].name, inline: true },
