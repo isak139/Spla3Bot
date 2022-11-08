@@ -1,0 +1,277 @@
+{
+    "ボールドマーカー": {
+        "sub": "カーリングボム",
+        "special": "ウルトラハンコ",
+        "image": "https://i.imgur.com/ftW7JRb.png"
+    },
+    "わかばシューター": {
+        "sub": "スプラッシュボム",
+        "special": "グレートバリア",
+        "image": "https://i.imgur.com/PUap0qo.png"
+    },
+    "シャープマーカー": {
+        "sub": "クイックボム",
+        "special": "カニタンク",
+        "image": "https://i.imgur.com/5OGsEWg.png"
+    },
+    "プロモデラーMG": {
+        "sub": "タンサンボム",
+        "special": "サメライド",
+        "image": "https://i.imgur.com/l2uG138.png"
+    },
+    "スプラシューター": {
+        "sub": "キューバンボム",
+        "special": "ウルトラショット",
+        "image": "https://i.imgur.com/SAS5GsB.png"
+    },
+    "ヒーローシューター レプリカ": {
+        "sub": "キューバンボム",
+        "special": "ウルトラショット",
+        "image": "https://i.imgur.com/iLpXzDi.png"
+    },
+    ".52ガロン": {
+        "sub": "スプラッシュシールド",
+        "special": "メガホンレーザー5.1ch",
+        "image": "https://i.imgur.com/7OYFEd3.png"
+    },
+    "N-ZAP85": {
+        "sub": "キューバンボム",
+        "special": "エナジースタンド",
+        "image": "https://i.imgur.com/MIKft3A.png"
+    },
+    "プライムシューター": {
+        "sub": "ラインマーカー",
+        "special": "カニタンク",
+        "image": "https://i.imgur.com/jxYH9J4.png"
+    },
+    ".96ガロン": {
+        "sub": "スプリンクラー",
+        "special": "キューインキ",
+        "image": "https://i.imgur.com/N98ALSq.png"
+    },
+    "ジェットスイーパー": {
+        "sub": "ラインマーカー",
+        "special": "キューインキ",
+        "image": "https://i.imgur.com/TTQAVLp.png"
+    },
+    "ノヴァブラスター": {
+        "sub": "スプラッシュボム",
+        "special": "ショクワンダー",
+        "image": "https://i.imgur.com/rkVngI2.png"
+    },
+    "ホットブラスター": {
+        "sub": "ロボットボム",
+        "special": "グレートバリア",
+        "image": "https://i.imgur.com/oNqyUtR.png"
+    },
+    "ロングブラスター": {
+        "sub": "キューバンボム",
+        "special": "ホップソナー",
+        "image": "https://i.imgur.com/MdxVJRg.png"
+    },
+    "クラッシュブラスター": {
+        "sub": "スプラッシュボム",
+        "special": "ウルトラショット",
+        "image": "https://i.imgur.com/NwYQSdX.png"
+    },
+    "ラピッドブラスター": {
+        "sub": "トラップ",
+        "special": "トリプルトルネード",
+        "image": "https://i.imgur.com/h5XjUEU.png"
+    },
+    "Rブラスターエリート": {
+        "sub": "ポイズンミスト",
+        "special": "キューインキ",
+        "image": "https://i.imgur.com/nN8CpMD.png"
+    },
+    "L3リールガン": {
+        "sub": "カーリングボム",
+        "special": "カニタンク",
+        "image": "https://i.imgur.com/mVszflG.png"
+    },
+    "H3リールガン": {
+        "sub": "ポイントセンサー",
+        "special": "エナジースタンド",
+        "image": "https://i.imgur.com/svRgZGc.png"
+    },
+    "ボトルガイザー": {
+        "sub": "スプラッシュシールド",
+        "special": "ウルトラショット",
+        "image": "https://i.imgur.com/DIwc610.png"
+    },
+    "カーボンローラー": {
+        "sub": "ロボットボム",
+        "special": "ショクワンダー",
+        "image": "https://i.imgur.com/P0BcxDL.png"
+    },
+    "スプラローラー": {
+        "sub": "カーリングボム",
+        "special": "グレートバリア",
+        "image": "https://i.imgur.com/KbiEWMD.png"
+    },
+    "ダイナモローラー": {
+        "sub": "スプリンクラー",
+        "special": "エナジースタンド",
+        "image": "https://i.imgur.com/O3Sk5PG.png"
+    },
+    "ヴァリアブルローラー": {
+        "sub": "トラップ",
+        "special": "マルチミサイル",
+        "image": "https://i.imgur.com/Kccl1Hu.png"
+    },
+    "パブロ": {
+        "sub": "スプラッシュボム",
+        "special": "メガホンレーザー5.1ch",
+        "image": "https://i.imgur.com/Cjuk3tm.png"
+    },
+    "ホクサイ": {
+        "sub": "キューバンボム",
+        "special": "ショクワンダー",
+        "image": "https://i.imgur.com/1EY97xX.png"
+    },
+    "スクイックリンα": {
+        "sub": "ポイントセンサー",
+        "special": "グレートバリア",
+        "image": "https://i.imgur.com/OAwpHVA.png"
+    },
+    "スプラチャージャー": {
+        "sub": "スプラッシュボム",
+        "special": "キューインキ",
+        "image": "https://i.imgur.com/hGL5CjZ.png"
+    },
+    "スプラスコープ": {
+        "sub": "スプラッシュボム",
+        "special": "キューインキ",
+        "image": "https://i.imgur.com/WmFNDih.png"
+    },
+    "リッター4K": {
+        "sub": "トラップ",
+        "special": "ホップソナー",
+        "image": "https://i.imgur.com/hnAFesm.png"
+    },
+    "4Kスコープ": {
+        "sub": "トラップ",
+        "special": "ホップソナー",
+        "image": "https://i.imgur.com/7LTPH7E.png"
+    },
+    "14式竹筒銃・甲": {
+        "sub": "ロボットボム",
+        "special": "メガホンレーザー5.1ch",
+        "image": "https://i.imgur.com/TNphrZg.png"
+    },
+    "ソイチューバー": {
+        "sub": "トーピード",
+        "special": "マルチミサイル",
+        "image": "https://i.imgur.com/QeLpdla.png"
+    },
+    "バケットスロッシャー": {
+        "sub": "スプラッシュボム",
+        "special": "トリプルトルネード",
+        "image": "https://i.imgur.com/HO8nCCE.png"
+    },
+    "ヒッセン": {
+        "sub": "ポイズンミスト",
+        "special": "ジェットパック",
+        "image": "https://i.imgur.com/ULRMjGt.png"
+    },
+    "スクリュースロッシャー": {
+        "sub": "タンサンボム",
+        "special": "ナイスダマ",
+        "image": "https://i.imgur.com/kecntmo.png"
+    },
+    "オーバーフロッシャー": {
+        "sub": "スプリンクラー",
+        "special": "アメフラシ",
+        "image": "https://i.imgur.com/c60y921.png"
+    },
+    "エクスプロッシャー": {
+        "sub": "ポイントセンサー",
+        "special": "アメフラシ",
+        "image": "https://i.imgur.com/gr2RX6A.png"
+    },
+    "スプラスピナー": {
+        "sub": "クイックボム",
+        "special": "ウルトラハンコ",
+        "image": "https://i.imgur.com/nCTtQIK.png"
+    },
+    "バレルスピナー": {
+        "sub": "スプリンクラー",
+        "special": "ホップソナー",
+        "image": "https://i.imgur.com/zKOCysO.png"
+    },
+    "ハイドラント": {
+        "sub": "ロボットボム",
+        "special": "ナイスダマ",
+        "image": "https://i.imgur.com/Zkyss7G.png"
+    },
+    "クーゲルシュライバー": {
+        "sub": "タンサンボム",
+        "special": "ジェットパック",
+        "image": "https://i.imgur.com/moxcBbK.png"
+    },
+    "ノーチラス47": {
+        "sub": "ポイントセンサー",
+        "special": "アメフラシ",
+        "image": "https://i.imgur.com/bDSDvxS.png"
+    },
+    "スパッタリー": {
+        "sub": "ジャンプビーコン",
+        "special": "エナジースタンド",
+        "image": "https://i.imgur.com/nvedsaC.png"
+    },
+    "スプラマニューバー": {
+        "sub": "キューバンボム",
+        "special": "カニタンク",
+        "image": "https://i.imgur.com/quiO6YU.png"
+    },
+    "ケルビン525": {
+        "sub": "スプラッシュシールド",
+        "special": "ナイスダマ",
+        "image": "https://i.imgur.com/hxMIwPB.png"
+    },
+    "デュアルスイーパー": {
+        "sub": "スプラッシュボム",
+        "special": "ホップソナー",
+        "image": "https://i.imgur.com/nQAjZJE.png"
+    },
+    "クアッドホッパーブラック": {
+        "sub": "ロボットボム",
+        "special": "サメライド",
+        "image": "https://i.imgur.com/CtVvnM0.png"
+    },
+    "パラシェルター": {
+        "sub": "スプリンクラー",
+        "special": "トリプルトルネード",
+        "image": "https://i.imgur.com/honiJUU.png"
+    },
+    "キャンピングシェルター": {
+        "sub": "ジャンプビーコン",
+        "special": "キューインキ",
+        "image": "https://i.imgur.com/I8lzCgH.png"
+    },
+    "スパイガジェット": {
+        "sub": "トラップ",
+        "special": "サメライド",
+        "image": "https://i.imgur.com/ROEbZc6.png"
+    },
+    "トライストリンガー": {
+        "sub": "ポイズンミスト",
+        "special": "メガホンレーザー5.1ch",
+        "image": "https://i.imgur.com/J5BY0cI.png"
+    },
+    "LACT-450": {
+        "sub": "カーリングボム",
+        "special": "マルチミサイル",
+        "image": "https://i.imgur.com/Jd5EtI7.png"
+    },
+    "ジムワイパー": {
+        "sub": "クイックボム",
+        "special": "ショクワンダー",
+        "image": "https://i.imgur.com/BxKjPuH.png"
+    },
+    "ドライブワイパー": {
+        "sub": "トーピード",
+        "special": "ウルトラハンコ",
+        "image": "https://i.imgur.com/6NIScSm.png"
+    }
+}
