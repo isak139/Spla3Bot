@@ -3,6 +3,7 @@ const fs = require("fs");
 
 const weaponInfo = JSON.parse(fs.readFileSync("././resources/splatoon3-weaponInfo.json", "utf8"));
 const stageInfo = JSON.parse(fs.readFileSync("././resources/splatoon3-stageInfo.json", "utf8"));
+const ruleInfo = JSON.parse(fs.readFileSync("././resources/splatoon3-ruleInfo.json", "utf8"));
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -51,7 +52,16 @@ module.exports = {
             };
             return interaction.editReply({ embeds: [embed] });
         } else if (query == "rule") {
-            return;
+            const rule = Object.entries(ruleInfo)[Math.floor(Math.random() * Object.entries(ruleInfo).length)];
+            const embed = {
+                author: {
+                    name: "ランダムルール",
+                    icon_url: "https://i.imgur.com/2AijJjL.png",
+                },
+                title: rule[0],
+                image: { url: rule[1].image },
+            };
+            return interaction.editReply({ embeds: [embed] });
         } else {
             const embed = { title: "Error" };
             return await interaction.editReply({ embeds: [embed] });
