@@ -24,7 +24,7 @@ module.exports = {
             const embed = {
                 author: {
                     name: "ランダムブキ",
-                    icon_url: "https://i.imgur.com/2AijJjL.png",
+                    icon_url: "https://i.imgur.com/LjHn7tr.png",
                 },
                 title: weapon[0],
                 fields: [
@@ -45,7 +45,7 @@ module.exports = {
             const embed = {
                 author: {
                     name: "ランダムステージ",
-                    icon_url: "https://i.imgur.com/2AijJjL.png",
+                    icon_url: "https://i.imgur.com/LjHn7tr.png",
                 },
                 title: stage[0],
                 image: { url: stage[1].image },
@@ -56,7 +56,7 @@ module.exports = {
             const embed = {
                 author: {
                     name: "ランダムルール",
-                    icon_url: "https://i.imgur.com/2AijJjL.png",
+                    icon_url: "https://i.imgur.com/LjHn7tr.png",
                 },
                 title: rule[0],
                 image: { url: rule[1].image },
