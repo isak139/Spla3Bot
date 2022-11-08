@@ -2,6 +2,7 @@ const { SlashCommandBuilder } = require("@discordjs/builders");
 const fs = require("fs");
 
 const weaponInfo = JSON.parse(fs.readFileSync("././resources/splatoon3-weaponInfo.json", "utf8"));
+const stageInfo = JSON.parse(fs.readFileSync("././resources/splatoon3-stageInfo.json", "utf8"));
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -39,7 +40,16 @@ module.exports = {
             };
             return interaction.editReply({ embeds: [embed] });
         } else if (query == "stage") {
-            return;
+            const stage = Object.entries(stageInfo)[Math.floor(Math.random() * Object.entries(stageInfo).length)];
+            const embed = {
+                author: {
+                    name: "ランダムステージ",
+                    icon_url: "https://i.imgur.com/2AijJjL.png",
+                },
+                title: stage[0],
+                image: { url: stage[1].image },
+            };
+            return interaction.editReply({ embeds: [embed] });
         } else if (query == "rule") {
             return;
         } else {
