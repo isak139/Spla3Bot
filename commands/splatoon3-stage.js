@@ -8,10 +8,8 @@ const splaApi = "https://spla3.yuu26.com/api/";
 const stageImages = JSON.parse(fs.readFileSync("././resources/splatoon3-stageImages.json", "utf8")).stageImages;
 
 const ruleInfo = JSON.parse(fs.readFileSync("././resources/splatoon3-ruleInfo.json", "utf8"));
-console.log(ruleInfo);
 
 const matchInfo = JSON.parse(fs.readFileSync("././resources/splatoon3-matchInfo.json", "utf8"));
-console.log(matchInfo);
 
 const fesImage = "https://i.imgur.com/dwnSeCC.jpg";
 const fesIcon = "https://i.imgur.com/kkg0f8w.png";
