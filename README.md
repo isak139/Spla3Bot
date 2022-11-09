@@ -5,6 +5,8 @@ Discord でスプラトゥーン 3 のステージ情報などを取得できる
 
 # Bot Setup
 
+**Node.js v18 が必要です．**
+
 -   `npm install` を実行．
 -   root ディレクトリに`.env`ファイルを作成する．
     ```
