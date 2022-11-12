@@ -147,7 +147,7 @@ module.exports = {
                         const embed = {
                             color: 0xeaff3d,
                             author: {
-                                name: "フェスマッチ",
+                                name: "トリカラアタック",
                                 icon_url: fesIcon,
                             },
                             thumbnail: { url: fesImage },
