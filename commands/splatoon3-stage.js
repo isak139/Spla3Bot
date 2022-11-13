@@ -59,7 +59,7 @@ module.exports = {
                         name: "フェスマッチ",
                         icon_url: fesIcon,
                     },
-                    description: "フェスマッチの情報は`\\fes`で取得できます．",
+                    description: "フェスマッチの情報は`/fes`で取得できます．",
                     fields: [{ name: "期間", value: matchDate }],
                     image: { url: fesImage },
                 };
@@ -94,7 +94,7 @@ module.exports = {
                             name: "フェスマッチ",
                             icon_url: fesIcon,
                         },
-                        description: "フェスマッチの情報は`\\fes`で取得できます．",
+                        description: "フェスマッチの情報は`/fes`で取得できます．",
                         fields: [{ name: "期間", value: matchDate }],
                         image: { url: fesImage },
                     };
