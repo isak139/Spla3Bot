@@ -25,6 +25,8 @@ Discord でスプラトゥーン 3 のステージ情報などを取得できる
 | /stage \(regular\|open\|challenge\) \(schedule\)  | 現在以降の指定したマッチのステージデータ一覧を表示します．   | ![](https://user-images.githubusercontent.com/61001713/200783176-5edd0584-cc0c-4a0a-96bd-5e7fe8d85c73.gif) |
 | /coop \(now\|next\)                               | 現在あるいは次のサーモンランの情報を表示します．             | ![](https://i.imgur.com/EGP2v3i.png)                                                                       |
 | /coop \(schedule\)                                | 現在以降のサーモンランの情報を表示します．                   | ![](https://user-images.githubusercontent.com/61001713/200782942-d5d252fe-63e7-478e-a8d1-6977aef73630.gif) |
+| /fes fesmatch \(now\|next\|scedule\)              | フェスマッチの情報を表示します．                             | ![](https://i.imgur.com/A8oZA2q.png)                                                                       |
+| /fes tricolor \(now\|next\|scedule\)              | トリカラバトルの情報を表示します．                           | ![](https://i.imgur.com/hJOSz1u.png)                                                                       |
 | /random weapon                                    | ランダムにブキの情報を表示します．                           | ![](https://i.imgur.com/YVTJR6A.png/ra/)                                                                   |
 | /random stage                                     | ランダムにステージを表示します．                             | ![](https://i.imgur.com/QcHqI37.png)                                                                       |
 | /random rule                                      | ランダムにルールを表示します．                               | ![](https://i.imgur.com/vuEicsd.png)                                                                       |
