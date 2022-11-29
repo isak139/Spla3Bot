@@ -48,7 +48,7 @@ module.exports = {
                     { name: "ブキ", value: `${weapons[0].name}\n${weapons[1].name}\n${weapons[2].name}\n${weapons[3].name}`, inline: true },
                     { name: "ステージ", value: `${result.stage.name}`, inline: true },
                 ],
-                image: { url: coopImages[result.stage.id] },
+                image: { url: result.stage.image /* coopImages[result.stage.id] */ },
             };
             return await interaction.editReply({ embeds: [embed] });
         } else if (time == "schedule") {
@@ -70,7 +70,7 @@ module.exports = {
                         { name: "ブキ", value: `${weapons[0].name}\n${weapons[1].name}\n${weapons[2].name}\n${weapons[3].name}`, inline: true },
                         { name: "ステージ", value: `${result.stage.name}`, inline: true },
                     ],
-                    image: { url: coopImages[result.stage.id] },
+                    image: { url: result.stage.image /* coopImages[result.stage.id] */ },
                     footer: { text: `Page ${index + 1}/${coopSchedule.results.length}` },
                 };
                 pages.push(embed);
