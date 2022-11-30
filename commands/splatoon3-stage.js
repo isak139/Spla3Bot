@@ -21,8 +21,8 @@ module.exports = {
         .addStringOption((option) =>
             option
                 .setName("match")
-                .setDescription("What is the match? ( regular / challenge / open )")
-                .addChoices({ name: "regular", value: "regular" }, { name: "challenge", value: "bankara-challenge" }, { name: "open", value: "bankara-open" })
+                .setDescription("What is the match? ( regular / challenge / open / x)")
+                .addChoices({ name: "regular", value: "regular" }, { name: "challenge", value: "bankara-challenge" }, { name: "open", value: "bankara-open" }, { name: "x", value: "x" })
                 .setRequired(true),
         )
         .addStringOption((option) =>

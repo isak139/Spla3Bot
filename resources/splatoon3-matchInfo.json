@@ -18,5 +18,10 @@
         "name": "リーグ",
         "icon": "https://i.imgur.com/oiIZSXG.png",
         "color": "0xc76080"
+    },
+    "x": {
+        "name": "Xマッチ",
+        "icon": "https://i.imgur.com/Wr116w1.png",
+        "color": "0x0dd99a"
     }
 }
