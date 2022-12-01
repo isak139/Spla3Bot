@@ -273,5 +273,70 @@
         "sub": "トーピード",
         "special": "ウルトラハンコ",
         "image": "https://i.imgur.com/6NIScSm.png"
+    },
+    "スペースシューター": {
+        "sub": "ポイントセンサー",
+        "special": "メガホンレーザー5.1ch",
+        "image": "https://i.imgur.com/fWPfZDL.png"
+    },
+    "ワイドローラー": {
+        "sub": "スプラッシュシールド",
+        "special": "キューインキ",
+        "image": "https://i.imgur.com/SQIfN5w.png"
+    },
+    "R-PEN/5H": {
+        "sub": "スプリンクラー",
+        "special": "エナジースタンド",
+        "image": "https://i.imgur.com/BbUZEh8.png"
+    },
+    "スプラスピナーコラボ": {
+        "sub": "ポイズンミスト",
+        "special": "グレートバリア",
+        "image": "https://i.imgur.com/2aCr7Ta.png"
+    },
+    "ノヴァブラスターネオ": {
+        "sub": "タンサンボム",
+        "special": "ウルトラハンコ",
+        "image": "https://i.imgur.com/xoVv0KK.png"
+    },
+    "プライムシューターコラボ": {
+        "sub": "キューバンボム",
+        "special": "ナイスダマ",
+        "image": "https://i.imgur.com/colVJUo.png"
+    },
+    "パブロ・ヒュー": {
+        "sub": "トラップ",
+        "special": "ウルトラハンコ",
+        "image": "https://i.imgur.com/E5FPDax.png"
+    },
+    "スパッタリー・ヒュー": {
+        "sub": "トーピード",
+        "special": "サメライド",
+        "image": "https://i.imgur.com/U29MZ5i.png"
+    },
+    "プロモデラーRG": {
+        "sub": "スプリンクラー",
+        "special": "ナイスダマ",
+        "image": "https://i.imgur.com/goNplLF.png"
+    },
+    "バケットスロッシャーデコ": {
+        "sub": "ラインマーカー",
+        "special": "ショクワンダー",
+        "image": "https://i.imgur.com/WrP2J8B.png"
+    },
+    "もみじシューター": {
+        "sub": "トーピード",
+        "special": "ホップソナー",
+        "image": "https://i.imgur.com/2FlV6iG.png"
+    },
+    "カーボンローラーデコ": {
+        "sub": "クイックボム",
+        "special": "ウルトラショット",
+        "image": "https://i.imgur.com/aPRAQF0.png"
+    },
+    "スプラシューターコラボ": {
+        "sub": "スプラッシュボム",
+        "special": "トリプルトルネード",
+        "image": "https://i.imgur.com/jexMfef.png"
     }
 }
