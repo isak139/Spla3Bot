@@ -1,11 +1,11 @@
 const { SlashCommandBuilder } = require("@discordjs/builders");
 //const { EmbedBuilder } = require("discord.js");
 const buttonPages = require("../functions/pagination");
-const fs = require("fs");
+//const fs = require("fs");
 
 const splaApi = "https://spla3.yuu26.com/api/coop-grouping-regular/";
 
-const coopImages = JSON.parse(fs.readFileSync("././resources/splatoon3-coopImages.json", "utf8")).coopImages;
+//const coopImages = JSON.parse(fs.readFileSync("././resources/splatoon3-coopImages.json", "utf8")).coopImages;
 
 module.exports = {
     data: new SlashCommandBuilder()
