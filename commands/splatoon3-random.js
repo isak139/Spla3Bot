@@ -10,17 +10,14 @@ module.exports = {
     data: new SlashCommandBuilder()
         .setName("random")
         .setDescription("Answer information at random")
-        .addStringOption((option) =>
-            option
-                .setName("query")
-                .setDescription("Which information do you want? ( weapon / stage / rule / title)")
-                .addChoices({ name: "weapon", value: "weapon" }, { name: "stage", value: "stage" }, { name: "rule", value: "rule" }, { name: "title", value: "title" })
-                .setRequired(true),
-        ),
+        .addSubcommand((subcommand) => subcommand.setName("weapon").setDescription("Answer information about weapons at random"))
+        .addSubcommand((subcommand) => subcommand.setName("stage").setDescription("Answer information about stages at random"))
+        .addSubcommand((subcommand) => subcommand.setName("rule").setDescription("Answer information about rules at random"))
+        .addSubcommand((subcommand) => subcommand.setName("title").setDescription("Answer information about titles at random")),
 
     run: async ({ interaction }) => {
-        const query = interaction.options.getString("query", true);
-        if (query == "weapon") {
+        //const query = interaction.options.getString("query", true);
+        if (interaction.options.getSubcommand() == "weapon") {
             const weapon = Object.entries(weaponInfo)[Math.floor(Math.random() * Object.entries(weaponInfo).length)];
             const embed = {
                 author: {
@@ -41,7 +38,7 @@ module.exports = {
                 image: { url: weapon[1].image },
             };
             return interaction.editReply({ embeds: [embed] });
-        } else if (query == "stage") {
+        } else if (interaction.options.getSubcommand() == "stage") {
             const stage = Object.entries(stageInfo)[Math.floor(Math.random() * Object.entries(stageInfo).length)];
             const embed = {
                 author: {
@@ -52,7 +49,7 @@ module.exports = {
                 image: { url: stage[1].image },
             };
             return interaction.editReply({ embeds: [embed] });
-        } else if (query == "rule") {
+        } else if (interaction.options.getSubcommand() == "rule") {
             const rule = Object.entries(ruleInfo)[Math.floor(Math.random() * Object.entries(ruleInfo).length)];
             const embed = {
                 author: {
@@ -63,7 +60,7 @@ module.exports = {
                 image: { url: rule[1].image },
             };
             return interaction.editReply({ embeds: [embed] });
-        } else if (query == "title") {
+        } else if (interaction.options.getSubcommand() == "title") {
             const first = titleInfo.first[Math.floor(Math.random() * titleInfo.first.length)];
             const second = titleInfo.second[Math.floor(Math.random() * titleInfo.second.length)];
             const embed = {
