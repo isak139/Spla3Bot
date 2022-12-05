@@ -30,3 +30,4 @@ Discord でスプラトゥーン 3 のステージ情報などを取得できる
 | /random weapon                                    | ランダムにブキの情報を表示します．                           | ![](https://i.imgur.com/YVTJR6A.png/ra/)                                                                   |
 | /random stage                                     | ランダムにステージを表示します．                             | ![](https://i.imgur.com/QcHqI37.png)                                                                       |
 | /random rule                                      | ランダムにルールを表示します．                               | ![](https://i.imgur.com/vuEicsd.png)                                                                       |
+|/weapon \(sub\|special\)|サブまたはスペシャルからブキを検索します．|![](https://i.imgur.com/GlyOTNp.png)
