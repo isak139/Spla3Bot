@@ -20,6 +20,7 @@ module.exports = {
         if (interaction.options.getSubcommand() == "weapon") {
             const weapon = Object.entries(weaponInfo)[Math.floor(Math.random() * Object.entries(weaponInfo).length)];
             const embed = {
+                color: 0xfee75c,
                 author: {
                     name: "ランダムブキ",
                     icon_url: "https://i.imgur.com/LjHn7tr.png",
@@ -41,6 +42,7 @@ module.exports = {
         } else if (interaction.options.getSubcommand() == "stage") {
             const stage = Object.entries(stageInfo)[Math.floor(Math.random() * Object.entries(stageInfo).length)];
             const embed = {
+                color: 0xfee75c,
                 author: {
                     name: "ランダムステージ",
                     icon_url: "https://i.imgur.com/LjHn7tr.png",
@@ -52,6 +54,7 @@ module.exports = {
         } else if (interaction.options.getSubcommand() == "rule") {
             const rule = Object.entries(ruleInfo)[Math.floor(Math.random() * Object.entries(ruleInfo).length)];
             const embed = {
+                color: 0xfee75c,
                 author: {
                     name: "ランダムルール",
                     icon_url: "https://i.imgur.com/LjHn7tr.png",
@@ -64,6 +67,7 @@ module.exports = {
             const first = titleInfo.first[Math.floor(Math.random() * titleInfo.first.length)];
             const second = titleInfo.second[Math.floor(Math.random() * titleInfo.second.length)];
             const embed = {
+                color: 0xfee75c,
                 author: {
                     name: "ランダム二つ名",
                     icon_url: "https://i.imgur.com/LjHn7tr.png",
