@@ -2,22 +2,22 @@
     "regular": {
         "name": "レギュラー",
         "icon": "https://i.imgur.com/sHXeNci.png",
-        "color": "0x899a37"
+        "color": "0xD0F61C"
     },
     "bankara-challenge": {
         "name": "チャレンジ",
         "icon": "https://i.imgur.com/UO6hEB6.png",
-        "color": "0x835439"
+        "color": "0xF54708"
     },
     "bankara-open": {
         "name": "オープン",
         "icon": "https://i.imgur.com/UO6hEB6.png",
-        "color": "0x835439"
+        "color": "0xF54708"
     },
     "league": {
         "name": "リーグ",
         "icon": "https://i.imgur.com/oiIZSXG.png",
-        "color": "0xc76080"
+        "color": "0xF0297E"
     },
     "x": {
         "name": "Xマッチ",
