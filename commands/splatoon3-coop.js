@@ -37,7 +37,7 @@ module.exports = {
             const coopDate = `${startDate.slice(5, 7)}/${startDate.slice(8, 10)} ${startDate.slice(11, 13)}:00 ~ ${endDate.slice(5, 7)}/${endDate.slice(8, 10)} ${endDate.slice(11, 13)}:00 (${time})`;
             const weapons = result.weapons;
             const embed = {
-                color: 0xffaa00,
+                color: 0xef5534,
                 author: {
                     name: "サーモンラン",
                     icon_url: "https://i.imgur.com/QthCIvF.png",
@@ -59,7 +59,7 @@ module.exports = {
                 const coopDate = `${startDate.slice(5, 7)}/${startDate.slice(8, 10)} ${startDate.slice(11, 13)}:00 ~ ${endDate.slice(5, 7)}/${endDate.slice(8, 10)} ${endDate.slice(11, 13)}:00`;
                 const weapons = result.weapons;
                 const embed = {
-                    color: 0xffaa00,
+                    color: 0xef5534,
                     author: {
                         name: "サーモンラン",
                         icon_url: "https://i.imgur.com/QthCIvF.png",
