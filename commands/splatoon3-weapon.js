@@ -40,6 +40,7 @@ module.exports = {
             const results = Object.entries(weaponInfo).filter((weapon) => weapon[1].sub == sub);
             const pages = results.map((weapon) => {
                 return {
+                    color: 0x6e5adf,
                     author: {
                         name: `${sub}を持つブキ`,
                         icon_url: "https://i.imgur.com/2AijJjL.png",
@@ -54,6 +55,7 @@ module.exports = {
             const results = Object.entries(weaponInfo).filter((weapon) => weapon[1].special == special);
             const pages = results.map((weapon) => {
                 return {
+                    color: 0x6e5adf,
                     author: {
                         name: `${special}を持つブキ`,
                         icon_url: "https://i.imgur.com/2AijJjL.png",
