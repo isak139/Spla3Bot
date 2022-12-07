@@ -2,6 +2,7 @@ const { SlashCommandBuilder } = require("@discordjs/builders");
 //const { EmbedBuilder } = require("discord.js");
 const buttonPages = require("../functions/pagination");
 const fs = require("fs");
+const getSchedule = require("../functions/fetchSplaApi");
 
 const splaApi = "https://spla3.yuu26.com/api/";
 
@@ -38,13 +39,8 @@ module.exports = {
         const time = interaction.options.getString("time", true);
 
         // データを取得
-        let splaSchedule;
-        try {
-            splaSchedule = await (await fetch(`${splaApi}${match}/${time}`)).json();
-        } catch (e) {
-            console.log(e);
-            return interaction.reply({ content: "Error: Could not fetch data", ephemeral: true });
-        }
+        const splaSchedule = await getSchedule(`${splaApi}${match}/${time}`, interaction);
+        if (!splaSchedule) return;
 
         if (time == "now" || time == "next") {
             const result = splaSchedule.results[0];
