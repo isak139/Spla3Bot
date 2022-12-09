@@ -4,7 +4,9 @@ const buttonPages = require("../functions/pagination");
 //const fs = require("fs");
 const getSchedule = require("../functions/fetchSplaApi");
 
-const splaApi = "https://spla3.yuu26.com/api/coop-grouping-regular/";
+const splaApi = "https://spla3.yuu26.com/api/coop-grouping/";
+const coopIcon = "https://i.imgur.com/12s7l5W.png";
+const bigRunIcon = "https://i.imgur.com/4MwNoi6.png";
 
 //const coopImages = JSON.parse(fs.readFileSync("././resources/splatoon3-coopImages.json", "utf8")).coopImages;
 
@@ -32,11 +34,12 @@ module.exports = {
             const endDate = result.end_time;
             const coopDate = `${startDate.slice(5, 7)}/${startDate.slice(8, 10)} ${startDate.slice(11, 13)}:00 ~ ${endDate.slice(5, 7)}/${endDate.slice(8, 10)} ${endDate.slice(11, 13)}:00 (${time})`;
             const weapons = result.weapons;
+            const is_big_run = result.is_big_run;
             const embed = {
-                color: 0xef5534,
+                color: is_big_run ? 0xda3cf5 : 0xef5534,
                 author: {
-                    name: "サーモンラン",
-                    icon_url: "https://i.imgur.com/QthCIvF.png",
+                    name: is_big_run ? "ビッグラン" : "サーモンラン",
+                    icon_url: is_big_run ? bigRunIcon : coopIcon,
                 },
                 thumbnail: { url: "https://i.imgur.com/ifdahLY.png" },
                 fields: [
@@ -54,11 +57,12 @@ module.exports = {
                 const endDate = result.end_time;
                 const coopDate = `${startDate.slice(5, 7)}/${startDate.slice(8, 10)} ${startDate.slice(11, 13)}:00 ~ ${endDate.slice(5, 7)}/${endDate.slice(8, 10)} ${endDate.slice(11, 13)}:00`;
                 const weapons = result.weapons;
+                const is_big_run = result.is_big_run;
                 const embed = {
-                    color: 0xef5534,
+                    color: is_big_run ? 0xda3cf5 : 0xef5534,
                     author: {
-                        name: "サーモンラン",
-                        icon_url: "https://i.imgur.com/QthCIvF.png",
+                        name: is_big_run ? "ビッグラン" : "サーモンラン",
+                        icon_url: is_big_run ? bigRunIcon : coopIcon,
                     },
                     thumbnail: { url: "https://i.imgur.com/ifdahLY.png" },
                     fields: [
