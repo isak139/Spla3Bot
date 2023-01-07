@@ -9,7 +9,7 @@ const splaApi = "https://spla3.yuu26.com/api/fest/";
 const stageImages = JSON.parse(fs.readFileSync("././resources/splatoon3-stageImages.json", "utf8")).stageImages;
 const stageInfo = JSON.parse(fs.readFileSync("././resources/splatoon3-stageInfo.json", "utf8"));
 
-const fesImage = "https://i.imgur.com/dwnSeCC.jpg";
+const fesImage = "https://i.imgur.com/EAeooZU.jpg";
 const fesIcon = "https://i.imgur.com/kkg0f8w.png";
 
 module.exports = {

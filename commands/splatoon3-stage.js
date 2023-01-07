@@ -12,7 +12,7 @@ const ruleInfo = JSON.parse(fs.readFileSync("././resources/splatoon3-ruleInfo.js
 
 const matchInfo = JSON.parse(fs.readFileSync("././resources/splatoon3-matchInfo.json", "utf8"));
 
-const fesImage = "https://i.imgur.com/dwnSeCC.jpg";
+const fesImage = "https://i.imgur.com/EAeooZU.jpg";
 const fesIcon = "https://i.imgur.com/kkg0f8w.png";
 
 module.exports = {
