@@ -284,7 +284,7 @@
         "special": "キューインキ",
         "image": "https://i.imgur.com/SQIfN5w.png"
     },
-    "R-PEN/5H": {
+    "R-PEN 5H": {
         "sub": "スプリンクラー",
         "special": "エナジースタンド",
         "image": "https://i.imgur.com/BbUZEh8.png"
@@ -338,5 +338,65 @@
         "sub": "スプラッシュボム",
         "special": "トリプルトルネード",
         "image": "https://i.imgur.com/jexMfef.png"
+    },
+    "スプラローラーコラボ": {
+        "sub": "ジャンプビーコン",
+        "special": "テイオウイカ",
+        "image": "https://i.imgur.com/IiVKvMF.png"
+    },
+    "スプラチャージャーコラボ": {
+        "sub": "スプラッシュシールド",
+        "special": "トリプルトルネード",
+        "image": "https://i.imgur.com/g1a4LYO.png"
+    },
+    "ラピッドブラスターデコ": {
+        "sub": "トーピード",
+        "special": "ジェットパック",
+        "image": "https://i.imgur.com/e2iWN1q.png"
+    },
+    "N-ZAP89": {
+        "sub": "ロボットボム",
+        "special": "デコイチラシ",
+        "image": "https://i.imgur.com/LlXlbXv.png"
+    },
+    "ボールドマーカーネオ": {
+        "sub": "ジャンプビーコン",
+        "special": "メガホンレーザー5.1ch",
+        "image": "https://i.imgur.com/xyOyhaa.png"
+    },
+    "スプラスコープコラボ": {
+        "sub": "スプラッシュシールド",
+        "special": "トリプルトルネード",
+        "image": "https://i.imgur.com/YAzAzyN.png"
+    },
+    "ヒッセン・ヒュー": {
+        "sub": "タンサンボム",
+        "special": "エナジースタンド",
+        "image": "https://i.imgur.com/fv8LL7b.png"
+    },
+    "L3リールガンD": {
+        "sub": "クイックボム",
+        "special": "ウルトラハンコ",
+        "image": "https://i.imgur.com/D83vDyS.png"
+    },
+    "ジェットスイーパーカスタム": {
+        "sub": "ポイズンミスト",
+        "special": "アメフラシ",
+        "image": "https://i.imgur.com/NqgZJGq.png"
+    },
+    "シャープマーカーネオ": {
+        "sub": "キューバンボム",
+        "special": "トリプルトルネード",
+        "image": "https://i.imgur.com/tXSua7J.png"
+    },
+    "96ガロンデコ": {
+        "sub": "スプラッシュシールド",
+        "special": "テイオウイカ",
+        "image": "https://i.imgur.com/yWIzFoG.png"
+    },
+    "クラッシュブラスターネオ": {
+        "sub": "カーリングボム",
+        "special": "デコイチラシ",
+        "image": "https://i.imgur.com/et3oYu7.png"
     }
 }
