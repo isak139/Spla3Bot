@@ -398,5 +398,60 @@
         "sub": "カーリングボム",
         "special": "デコイチラシ",
         "image": "https://i.imgur.com/et3oYu7.png"
+    },
+    "ワイドローラーコラボ": {
+        "sub": "ラインマーカー",
+        "special": "アメフラシ",
+        "image": "https://i.imgur.com/mEXTM7H.png"
+    },
+    "バレルスピナーデコ": {
+        "sub": "ポイントセンサー",
+        "special": "テイオウイカ",
+        "image": "https://i.imgur.com/AjeDEZu.png"
+    },
+    "デュアルスイーパーカスタム": {
+        "sub": "ジャンプビーコン",
+        "special": "デコイチラシ",
+        "image": "https://i.imgur.com/2t5z8Xz.png"
+    },
+    "スペースシューターコラボ": {
+        "sub": "トラップ",
+        "special": "ジェットパック",
+        "image": "https://i.imgur.com/SfLE4Dc.png"
+    },
+    "ドライブワイパーデコ": {
+        "sub": "ジャンプビーコン",
+        "special": "マルチミサイル",
+        "image": "https://i.imgur.com/g41g8IL.png"
+    },
+    "キャンピングシェルターソレーラ": {
+        "sub": "トラップ",
+        "special": "ウルトラショット",
+        "image": "https://i.imgur.com/j25lIVf.png"
+    },
+    "クアッドホッパーホワイト": {
+        "sub": "スプリンクラー",
+        "special": "ショクワンダー",
+        "image": "https://i.imgur.com/4J4dLyC.png"
+    },
+    "H3リールガンD": {
+        "sub": "スプラッシュシールド",
+        "special": "グレートバリア",
+        "image": "https://i.imgur.com/mICQGDj.png"
+    },
+    "Rブラスターエリートデコ": {
+        "sub": "ラインマーカー",
+        "special": "メガホンレーザー5.1ch",
+        "image": "https://i.imgur.com/lKtB3LO.png"
+    },
+    "フィンセント": {
+        "sub": "カーリングボム",
+        "special": "ホップソナー",
+        "image": "https://i.imgur.com/6v6YTb9.png"
+    },
+    "S-BLAST92": {
+        "sub": "スプリンクラー",
+        "special": "サメライド",
+        "image": "https://i.imgur.com/LWvG6vF.png"
     }
 }
