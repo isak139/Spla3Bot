@@ -453,5 +453,55 @@
         "sub": "スプリンクラー",
         "special": "サメライド",
         "image": "https://i.imgur.com/LWvG6vF.png"
+    },
+    "モップリン": {
+        "sub": "キューバンボム",
+        "special": "サメライド",
+        "image": "https://i.imgur.com/w5x73l0.png"
+    },
+    "イグザミナー": {
+        "sub": "カーリングボム",
+        "special": "エナジースタンド",
+        "image": "https://i.imgur.com/GCpIgXu.png"
+    },
+    "ソイチューバーカスタム": {
+        "sub": "タンサンボム",
+        "special": "ウルトラハンコ",
+        "image": "https://i.imgur.com/pLV3NcO.png"
+    },
+    "ホクサイ・ヒュー": {
+        "sub": "ジャンプビーコン",
+        "special": "アメフラシ",
+        "image": "https://i.imgur.com/vXOZhfq.png"
+    },
+    "パラシェルターソレーラ": {
+        "sub": "ロボットボム",
+        "special": "ジェットパック",
+        "image": "https://i.imgur.com/3iyoVaj.png"
+    },
+    "オーバーフロッシャーデコ": {
+        "sub": "ラインマーカー",
+        "special": "テイオウイカ",
+        "image": "https://i.imgur.com/LKe4LaE.png"
+    },
+    "クーゲルシュライバー・ヒュー": {
+        "sub": "トラップ",
+        "special": "キューインキ",
+        "image": "https://i.imgur.com/wsd3FA1.png"
+    },
+    "ダイナモローラーテスラ": {
+        "sub": "スプラッシュボム",
+        "special": "デコイチラシ",
+        "image": "https://i.imgur.com/uqkwLAb.png"
+    },
+    "スクリュースロッシャーネオ": {
+        "sub": "ポイントセンサー",
+        "special": "ウルトラショット",
+        "image": "https://i.imgur.com/6pve0Y0.png"
+    },
+    "トライストリンガーコラボ": {
+        "sub": "スプリンクラー",
+        "special": "デコイチラシ",
+        "image": "https://i.imgur.com/Diyxmnb.png"
     }
 }
