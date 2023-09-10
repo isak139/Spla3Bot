@@ -7,7 +7,7 @@ const getSchedule = require("../functions/fetchSplaApi");
 const splaApi = "https://spla3.yuu26.com/api/fest/";
 
 const stageImages = JSON.parse(fs.readFileSync("././resources/splatoon3-stageImages.json", "utf8")).stageImages;
-const stageInfo = JSON.parse(fs.readFileSync("././resources/splatoon3-stageInfo.json", "utf8"));
+//const stageInfo = JSON.parse(fs.readFileSync("././resources/splatoon3-stageInfo.json", "utf8"));
 
 const fesImage = JSON.parse(fs.readFileSync("././resources/splatoon3-fesImage.json", "utf8"));
 const fesIcon = "https://i.imgur.com/kkg0f8w.png";
@@ -121,7 +121,7 @@ module.exports = {
                             { name: "期間", value: matchDate, inline: false },
                             { name: "ステージ", value: result.tricolor_stage.name, inline: false },
                         ],
-                        image: { url: stageInfo[result.tricolor_stage.name].image },
+                        image: { url: result.tricolor_stage.image },
                     };
                     return interaction.editReply({ embeds: [embed] });
                 } else {
@@ -151,7 +151,7 @@ module.exports = {
                                 { name: "期間", value: matchDate, inline: false },
                                 { name: "ステージ", value: result.tricolor_stage.name, inline: false },
                             ],
-                            image: { url: stageInfo[result.tricolor_stage.name].image },
+                            image: { url: result.tricolor_stage.image },
                             footer: { text: `Page ${index + 1}/${splaSchedule.results.length}` },
                         };
                         pages.push(embed);
