@@ -503,5 +503,50 @@
         "sub": "スプリンクラー",
         "special": "デコイチラシ",
         "image": "https://i.imgur.com/Diyxmnb.png"
+    },
+    "R-PEN 5B": {
+        "sub": "スプラッシュシールド",
+        "special": "アメフラシ",
+        "image": "https://i.imgur.com/PydKB02.png"
+    },
+    "ボトルガイザーフォイル": {
+        "sub": "ロボットボム",
+        "special": "スミナガシート",
+        "image": "https://i.imgur.com/BggLPPc.png"
+    },
+    "スパイガジェットソレーラ": {
+        "sub": "トーピード",
+        "special": "スミナガシート",
+        "image": "https://i.imgur.com/ZzFdENO.png"
+    },
+    "フィンセント・ヒュー": {
+        "sub": "ポイントセンサー",
+        "special": "マルチミサイル",
+        "image": "https://i.imgur.com/hRqi986.png"
+    },
+    "LACT-450デコ": {
+        "sub": "スプラッシュシールド",
+        "special": "サメライド",
+        "image": "https://i.imgur.com/UW8w2Bz.png"
+    },
+    "S-BLAST91": {
+        "sub": "クイックボム",
+        "special": "ナイスダマ",
+        "image": "https://i.imgur.com/zRrXKI1.png"
+    },
+    "ジムワイパー・ヒュー": {
+        "sub": "ポイズンミスト",
+        "special": "カニタンク",
+        "image": "https://i.imgur.com/wh8btIK.png"
+    },
+    "スプラマニューバーコラボ": {
+        "sub": "カーリングボム",
+        "special": "ウルトラチャクチ",
+        "image": "https://i.imgur.com/1gMwKSh.png"
+    },
+    "ホットブラスターカスタム": {
+        "sub": "ポイントセンサー",
+        "special": "ウルトラチャクチ",
+        "image": "https://i.imgur.com/Tfo73fh.png"
     }
 }
