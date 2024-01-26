@@ -59,7 +59,7 @@ module.exports = {
                     fields: [{ name: "期間", value: matchDate }],
                     image: { url: fesImage },
                 };
-                return await interaction.editReply({ embeds: [embed] });
+                return await interaction.reply({ embeds: [embed] });
             } else {
                 // フェス開催中でない
                 const embed = {
@@ -73,7 +73,7 @@ module.exports = {
                     ],
                     image: { url: stageImages[result.stages[0].id][result.stages[1].id] },
                 };
-                return await interaction.editReply({ embeds: [embed] });
+                return await interaction.reply({ embeds: [embed] });
             }
         } else if (time == "schedule") {
             // スケジュールを指定した場合
@@ -115,7 +115,7 @@ module.exports = {
             return buttonPages(interaction, pages);
         } else {
             const embed = { title: "Error" };
-            return await interaction.editReply({ embeds: [embed] });
+            return await interaction.reply({ embeds: [embed] });
         }
     },
 };

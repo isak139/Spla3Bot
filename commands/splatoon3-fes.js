@@ -56,13 +56,13 @@ module.exports = {
                         ],
                         image: { url: stageImages[result.stages[0].id][result.stages[1].id] },
                     };
-                    return interaction.editReply({ embeds: [embed] });
+                    return interaction.reply({ embeds: [embed] });
                 } else {
                     const embed = {
                         color: 0xeaff3d,
                         title: "フェスマッチが開催されていません．",
                     };
-                    return interaction.editReply({ embeds: [embed] });
+                    return interaction.reply({ embeds: [embed] });
                 }
             } else if (time == "schedule") {
                 // スケジュールを指定した場合
@@ -101,7 +101,7 @@ module.exports = {
                 return buttonPages(interaction, pages);
             } else {
                 const embed = { title: "Error" };
-                return await interaction.editReply({ embeds: [embed] });
+                return await interaction.reply({ embeds: [embed] });
             }
         } else if (match == "tricolor") {
             if (time == "now" || time == "next") {
@@ -123,14 +123,14 @@ module.exports = {
                         ],
                         image: { url: result.tricolor_stage.image },
                     };
-                    return interaction.editReply({ embeds: [embed] });
+                    return interaction.reply({ embeds: [embed] });
                 } else {
                     const embed = {
                         color: 0xeaff3d,
                         title: "トリカラバトルが開催されていません．",
                         fields: [{ name: "期間", value: matchDate, inline: false }],
                     };
-                    return interaction.editReply({ embeds: [embed] });
+                    return interaction.reply({ embeds: [embed] });
                 }
             } else if (time == "schedule") {
                 // スケジュールを指定した場合
@@ -168,11 +168,11 @@ module.exports = {
                 return buttonPages(interaction, pages);
             } else {
                 const embed = { title: "Error" };
-                return await interaction.editReply({ embeds: [embed] });
+                return await interaction.reply({ embeds: [embed] });
             }
         } else {
             const embed = { title: "Error" };
-            return await interaction.editReply({ embeds: [embed] });
+            return await interaction.reply({ embeds: [embed] });
         }
     },
 };

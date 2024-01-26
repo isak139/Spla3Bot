@@ -67,7 +67,7 @@ module.exports = {
             return buttonPages(interaction, pages);
         } else {
             const embed = { title: "Error" };
-            return await interaction.editReply({ embeds: [embed] });
+            return await interaction.reply({ embeds: [embed] });
         }
     },
 };

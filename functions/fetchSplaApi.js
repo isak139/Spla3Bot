@@ -8,7 +8,7 @@ const getSchedule = async (url, interaction) => {
                 color: 0xff0000,
                 description: "Error: Could not fetch data",
             };
-            await interaction.editReply({ embeds: [embed] });
+            await interaction.reply({ embeds: [embed] });
             return;
         }
     } catch (e) {
@@ -17,7 +17,7 @@ const getSchedule = async (url, interaction) => {
             color: 0xff0000,
             description: "Error: Some error occurred",
         };
-        await interaction.editReply({ embeds: [embed] });
+        await interaction.reply({ embeds: [embed] });
         return;
     }
 };

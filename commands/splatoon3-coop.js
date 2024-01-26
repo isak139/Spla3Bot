@@ -51,7 +51,7 @@ module.exports = {
                 ],
                 image: { url: result.stage.image /* coopImages[result.stage.id] */ },
             };
-            return await interaction.editReply({ embeds: [embed] });
+            return await interaction.reply({ embeds: [embed] });
         } else if (time == "schedule") {
             const pages = [];
             coopSchedule.results.forEach((result, index) => {
@@ -80,7 +80,7 @@ module.exports = {
             return buttonPages(interaction, pages);
         } else {
             const embed = { title: "Error" };
-            return await interaction.editReply({ embeds: [embed] });
+            return await interaction.reply({ embeds: [embed] });
         }
     },
 };
