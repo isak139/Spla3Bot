@@ -1,14 +1,15 @@
 const { SlashCommandBuilder } = require("@discordjs/builders");
 //const { EmbedBuilder } = require("discord.js");
 const buttonPages = require("../functions/pagination");
-//const fs = require("fs");
+const fs = require("fs");
 const getSchedule = require("../functions/fetchSplaApi");
 
 const splaApi = "https://spla3.yuu26.com/api/coop-grouping/";
 const coopIcon = "https://i.imgur.com/12s7l5W.png";
 const bigRunIcon = "https://i.imgur.com/4MwNoi6.png";
-const coopThumbnail = "https://i.imgur.com/SeuUVno.png";
-const bigRunThumbnail = "https://i.imgur.com/6dnKItZ.png";
+//const coopThumbnail = "https://i.imgur.com/SeuUVno.png";
+//const bigRunThumbnail = "https://i.imgur.com/6dnKItZ.png";
+const kingSalmonid = JSON.parse(fs.readFileSync("././resources/splatoon3-kingSalmonid.json", "utf8"));
 
 //const coopImages = JSON.parse(fs.readFileSync("././resources/splatoon3-coopImages.json", "utf8")).coopImages;
 
@@ -43,9 +44,10 @@ module.exports = {
                     name: is_big_run ? "ビッグラン" : "サーモンラン",
                     icon_url: is_big_run ? bigRunIcon : coopIcon,
                 },
-                thumbnail: { url: is_big_run ? bigRunThumbnail : coopThumbnail },
+                thumbnail: { url: result.boss.name in kingSalmonid ? kingSalmonid[result.boss.name].image : kingSalmonid["ランダム"].image },
                 fields: [
                     { name: "期間", value: coopDate, inline: false },
+                    { name: "オカシラシャケ", value: result.boss.name in kingSalmonid ? result.boss.name : "ランダム", inline: false },
                     { name: "ブキ", value: `${weapons[0].name}\n${weapons[1].name}\n${weapons[2].name}\n${weapons[3].name}`, inline: true },
                     { name: "ステージ", value: `${result.stage.name}`, inline: true },
                 ],
@@ -66,9 +68,10 @@ module.exports = {
                         name: is_big_run ? "ビッグラン" : "サーモンラン",
                         icon_url: is_big_run ? bigRunIcon : coopIcon,
                     },
-                    thumbnail: { url: is_big_run ? bigRunThumbnail : coopThumbnail },
+                    thumbnail: { url: result.boss.name in kingSalmonid ? kingSalmonid[result.boss.name].image : kingSalmonid["ランダム"].image },
                     fields: [
                         { name: "期間", value: coopDate, inline: false },
+                        { name: "オカシラシャケ", value: result.boss.name in kingSalmonid ? result.boss.name : "ランダム", inline: false },
                         { name: "ブキ", value: `${weapons[0].name}\n${weapons[1].name}\n${weapons[2].name}\n${weapons[3].name}`, inline: true },
                         { name: "ステージ", value: `${result.stage.name}`, inline: true },
                     ],
