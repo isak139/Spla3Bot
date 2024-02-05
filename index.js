@@ -1,4 +1,4 @@
-const { Routes, Collection, Client, GatewayIntentBits } = require("discord.js");
+const { Routes, Collection, Client, GatewayIntentBits, ActivityType } = require("discord.js");
 const dotenv = require("dotenv");
 const { REST } = require("@discordjs/rest");
 const fs = require("fs");
@@ -50,6 +50,11 @@ rest.put(Routes.applicationCommands(CLIENT_ID), { body: commands })
 
 client.on("ready", () => {
     console.log(`Logged in as ${client.user.tag}`);
+    // アクティビティをセット
+    client.user.setActivity({
+        name: "スプラトゥーン3",
+        type: ActivityType.PLAYING,
+    });
 });
 client.on("interactionCreate", (interaction) => {
     async function handleCommand() {
