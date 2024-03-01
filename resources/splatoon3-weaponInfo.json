@@ -548,5 +548,60 @@
         "sub": "ポイントセンサー",
         "special": "ウルトラチャクチ",
         "image": "https://i.imgur.com/Tfo73fh.png"
+    },
+    "24式張替傘・甲": {
+        "sub": "ラインマーカー",
+        "special": "グレートバリア",
+        "image": "https://i.imgur.com/thkUSQh.png"
+    },
+    ".52ガロンデコ": {
+        "sub": "カーリングボム",
+        "special": "スミナガシート",
+        "image": "https://i.imgur.com/iCbNoe3.png"
+    },
+    "ガエンFF": {
+        "sub": "トラップ",
+        "special": "メガホンレーザー5.1ch",
+        "image": "https://i.imgur.com/4WyzNZ7.png"
+    },
+    "スクイックリンβ": {
+        "sub": "ロボットボム",
+        "special": "ショクワンダー",
+        "image": "https://i.imgur.com/eta1rNa.png"
+    },
+    "モップリンD": {
+        "sub": "ジャンプビーコン",
+        "special": "ホップソナー",
+        "image": "https://i.imgur.com/Fudj5cj.png"
+    },
+    "ヴァリアブルローラーフォイル": {
+        "sub": "キューバンボム",
+        "special": "スミナガシート",
+        "image": "https://i.imgur.com/Pyf0nsg.png"
+    },
+    "ノーチラス79": {
+        "sub": "キューバンボム",
+        "special": "ウルトラチャクチ",
+        "image": "https://i.imgur.com/gh2Dmac.png"
+    },
+    "ケルビン525デコ": {
+        "sub": "ポイントセンサー",
+        "special": "ウルトラショット",
+        "image": "https://i.imgur.com/lBQPw1E.png"
+    },
+    "4Kスコープカスタム": {
+        "sub": "ジャンプビーコン",
+        "special": "テイオウイカ",
+        "image": "https://i.imgur.com/gTxC5mx.png"
+    },
+    "リッター4Kカスタム": {
+        "sub": "ジャンプビーコン",
+        "special": "テイオウイカ",
+        "image": "https://i.imgur.com/CJ7Zzrq.png"
+    },
+    "エクスプロッシャーカスタム": {
+        "sub": "スプラッシュシールド",
+        "special": "ウルトラチャクチ",
+        "image": "https://i.imgur.com/MzSL1Yn.png"
     }
 }
