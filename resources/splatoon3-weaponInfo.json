@@ -603,5 +603,55 @@
         "sub": "スプラッシュシールド",
         "special": "ウルトラチャクチ",
         "image": "https://i.imgur.com/MzSL1Yn.png"
+    },
+    "フルイドV": {
+        "sub": "ロボットボム",
+        "special": "ウルトラハンコ",
+        "image": "https://i.imgur.com/D1DsdzY.png"
+    },
+    "フルイドVカスタム": {
+        "sub": "ポイントセンサー",
+        "special": "ホップソナー",
+        "image": "https://i.imgur.com/TfemEAE.png"
+    },
+    "デンタルワイパーミント": {
+        "sub": "キューバンボム",
+        "special": "グレートバリア",
+        "image": "https://i.imgur.com/BU8Q3HK.png"
+    },
+    "デンタルワイパースミ": {
+        "sub": "スプラッシュシールド",
+        "special": "ジェットパック",
+        "image": "https://i.imgur.com/SbO12aw.png"
+    },
+    "24式張替傘・乙": {
+        "sub": "ポイズンミスト",
+        "special": "ウルトラチャクチ",
+        "image": "https://i.imgur.com/Rlcr1KQ.png"
+    },
+    "14式竹筒銃・乙": {
+        "sub": "タンサンボム",
+        "special": "デコイチラシ",
+        "image": "https://i.imgur.com/GjDzjfK.png"
+    },
+    "イグザミナー・ヒュー": {
+        "sub": "スプラッシュボム",
+        "special": "カニタンク",
+        "image": "https://i.imgur.com/oaANxwr.png"
+    },
+    "ロングブラスターカスタム": {
+        "sub": "スプラッシュボム",
+        "special": "テイオウイカ",
+        "image": "https://i.imgur.com/OXXbmx1.png"
+    },
+    "ガエンFFカスタム": {
+        "sub": "クイックボム",
+        "special": "トリプルトルネード",
+        "image": "https://i.imgur.com/nPC9q9C.png"
+    },
+    "ハイドラントカスタム": {
+        "sub": "トラップ",
+        "special": "スミナガシート",
+        "image": "https://i.imgur.com/abxxa7E.png"
     }
 }
