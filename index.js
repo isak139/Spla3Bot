@@ -71,3 +71,11 @@ client.on("interactionCreate", (interaction) => {
     handleCommand();
 });
 client.login(TOKEN);
+
+// ヘルスチェック用サーバーを立てる
+var http = require('http');
+var server = http.createServer(function (request, response) {
+    response.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' });
+    response.end('Server is Online.');
+})
+server.listen(8000);
